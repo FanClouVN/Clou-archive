@@ -1,120 +1,60 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0c0d18">
-  <meta name="description" content="KELOU ARCHIVE — a fan-made photo archive for 可楼 (Clou).">
-  <title>KELOU ARCHIVE · 可楼</title>
-  <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css">
-  <script defer src="./script.js"></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f1ea"><meta name="description" content="A fan-made archive celebrating Clou — moments, photos, livestreams and memories collected with love.">
+<title>Clou Archive — 为热爱留档</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f6f1ea;--ink:#24211f;--muted:#77716b;--line:#ded6cc;--accent:#a55f4c;--accent2:#d8a78f;--card:#fffdf9;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif;--max:1240px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.55}a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}.topline{height:34px;background:#282421;color:#f9f1e8;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:.22em;text-transform:uppercase}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:700;letter-spacing:.08em;font-size:12px}.brand-mark{width:36px;height:36px;border:1px solid var(--ink);border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:17px}.navlinks{display:flex;gap:28px;align-items:center;font-size:11px;letter-spacing:.12em;text-transform:uppercase}.navlinks a{padding:8px 0;position:relative}.navlinks a:after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--accent);transition:.25s}.navlinks a:hover:after{width:100%}.menu{display:none;border:0;background:none;font-size:24px}.hero{padding:54px 0 64px}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:42px;align-items:center}.eyebrow{font-size:10px;letter-spacing:.23em;text-transform:uppercase;color:var(--accent);font-weight:700;display:flex;align-items:center;gap:10px}.eyebrow:before{content:'';width:28px;height:1px;background:var(--accent)}h1,h2,h3,p{margin-top:0}.hero h1{font:500 clamp(54px,7vw,94px)/.98 var(--serif);letter-spacing:-.055em;margin:22px 0 24px}.hero h1 em{color:var(--accent);font-weight:500}.cnline{font-family:var(--serif);font-size:20px;color:#77675d;letter-spacing:.08em;margin-bottom:17px}.intro{max-width:470px;color:#6d665f;font-size:14px;line-height:1.9}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:13px 19px;border:1px solid var(--ink);font-size:10px;letter-spacing:.13em;text-transform:uppercase;transition:.25s}.btn.primary{background:var(--ink);color:#fffaf4}.btn:hover{transform:translateY(-2px);background:var(--accent);border-color:var(--accent);color:white}.hero-note{margin-top:35px;padding-top:17px;border-top:1px solid var(--line);display:flex;justify-content:space-between;max-width:430px;font-size:9px;letter-spacing:.13em;color:var(--muted);text-transform:uppercase}.hero-art{position:relative;min-height:510px}.hero-photo{position:absolute;inset:0 8% 0 8%;overflow:hidden;background:#d7c6b8}.hero-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(.72)}.hero-photo:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(29,23,20,.35))}.photo-label{position:absolute;z-index:1;bottom:24px;left:24px;color:white;font:italic 20px var(--serif)}.stamp{position:absolute;right:0;top:30px;width:108px;height:108px;border-radius:50%;background:var(--accent);color:#fff8ef;display:grid;place-items:center;text-align:center;font-size:9px;letter-spacing:.13em;line-height:1.8;transform:rotate(9deg);z-index:2;border:5px solid var(--paper);outline:1px solid var(--accent)}.side-caption{position:absolute;left:0;bottom:42px;writing-mode:vertical-rl;transform:rotate(180deg);font-size:9px;letter-spacing:.2em;color:var(--muted)}.hero-index{position:absolute;right:2%;bottom:-16px;font:italic 42px var(--serif);color:var(--accent)}.ticker{background:#e9dfd4;border-block:1px solid #d9cbbd;overflow:hidden;padding:13px 0;white-space:nowrap}.ticker-track{display:inline-flex;gap:28px;animation:marquee 35s linear infinite;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#78655a}.ticker span{display:inline-flex;align-items:center;gap:28px}.ticker b{font-size:16px;color:var(--accent)}@keyframes marquee{to{transform:translateX(-50%)}}section{scroll-margin-top:30px}.collection{padding:88px 0 96px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:32px}.section-kicker{font-size:10px;color:var(--accent);letter-spacing:.2em;text-transform:uppercase;font-weight:700}.section-head h2{font:500 clamp(40px,5vw,62px)/1.05 var(--serif);letter-spacing:-.04em;margin:12px 0 0}.section-head h2 em{color:var(--accent)}.section-sub{color:var(--muted);font-size:12px;max-width:290px;margin:0 0 4px;line-height:1.8}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}.filter{border:1px solid var(--line);background:transparent;color:#69615b;padding:9px 14px;font-size:10px;letter-spacing:.08em;transition:.2s}.filter.active,.filter:hover{background:var(--ink);border-color:var(--ink);color:white}.searchbox{margin-left:auto;display:flex;align-items:center;border-bottom:1px solid #bcb0a4;min-width:190px;gap:8px}.searchbox span{font-size:18px;color:var(--muted)}.searchbox input{width:100%;border:0;background:transparent;outline:0;padding:8px 0;font-size:11px}.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.memory{background:var(--card);border:1px solid #e7dfd6;min-width:0;transition:transform .3s,box-shadow .3s;cursor:pointer}.memory:hover{transform:translateY(-5px);box-shadow:0 15px 30px #3d2a1710}.memory.hidden{display:none}.memory-image{height:250px;position:relative;overflow:hidden;background:#ddd0c3}.memory-image img{width:100%;height:100%;object-fit:cover;transition:transform .6s;filter:saturate(.78)}.memory:hover .memory-image img{transform:scale(1.05)}.memory-image:after{content:'↗';position:absolute;right:12px;top:12px;width:31px;height:31px;border-radius:50%;background:#fffdf0e8;display:grid;place-items:center;font-size:15px}.memory-info{padding:17px 17px 18px}.memory-type{font-size:9px;letter-spacing:.15em;color:var(--accent);text-transform:uppercase;font-weight:700}.memory-title{font:500 20px/1.25 var(--serif);margin:8px 0 9px}.memory-desc{font-size:11px;color:var(--muted);margin:0;line-height:1.7}.memory-date{margin-top:15px;padding-top:12px;border-top:1px solid #eee6dd;display:flex;justify-content:space-between;font-size:9px;color:#93867b;letter-spacing:.07em}.empty{display:none;text-align:center;padding:50px;color:var(--muted);font-family:var(--serif);font-size:23px}.empty.show{display:block}.quote-band{background:#2b2724;color:#f7efe5;padding:66px 0}.quote-inner{display:grid;grid-template-columns:1fr auto;align-items:center;gap:35px}.quote-mark{font:80px/.5 var(--serif);color:#c58b72}.quote-text{font:italic clamp(28px,4vw,48px)/1.2 var(--serif);max-width:800px;margin:22px 0 12px}.quote-cn{font-size:12px;letter-spacing:.12em;color:#cbb8a9}.quote-side{font-size:9px;letter-spacing:.2em;writing-mode:vertical-rl;color:#cbb8a9}.timeline{padding:88px 0}.timeline-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.timeline-intro h2{font:500 clamp(42px,5vw,62px)/1.05 var(--serif);letter-spacing:-.04em;margin:15px 0}.timeline-intro p{color:var(--muted);font-size:13px;line-height:1.9;max-width:360px}.timeline-list{border-top:1px solid var(--line)}.timeline-item{display:grid;grid-template-columns:95px 1fr;gap:22px;padding:22px 0;border-bottom:1px solid var(--line)}.timeline-date{font:italic 20px var(--serif);color:var(--accent)}.timeline-item h3{font:500 21px var(--serif);margin:0 0 5px}.timeline-item p{font-size:11px;color:var(--muted);margin:0;line-height:1.7}.about{background:#e9dfd4;padding:75px 0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.about h2{font:500 clamp(40px,5vw,58px)/1.05 var(--serif);letter-spacing:-.04em;margin:13px 0 20px}.about p{font-size:13px;color:#6d6259;line-height:1.9;max-width:500px}.about-card{padding:30px;border:1px solid #cdbdaf;background:#f5eee5}.about-card .big-cn{font:42px var(--serif);color:var(--accent);margin-bottom:14px}.about-card p{font-size:12px}.about-sign{font:italic 21px var(--serif);margin-top:20px;color:#756357}.footer{background:#24211f;color:#f6eee4;padding:30px 0}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer-brand{font:20px var(--serif)}.footer p{margin:5px 0 0;color:#b7aaa0;font-size:10px}.footer-links{display:flex;gap:20px;font-size:9px;letter-spacing:.13em;text-transform:uppercase}.lightbox{position:fixed;inset:0;background:#181513ed;z-index:20;display:none;align-items:center;justify-content:center;padding:28px}.lightbox.open{display:flex}.lightbox-content{max-width:900px;width:100%;display:grid;grid-template-columns:1.1fr .9fr;background:var(--paper);position:relative}.lightbox img{width:100%;height: min(75vh,700px);object-fit:cover}.lightbox-copy{padding:38px 30px;align-self:center}.lightbox-copy h3{font:34px var(--serif);margin:12px 0}.lightbox-copy p{font-size:13px;color:var(--muted);line-height:1.8}.close-lightbox{position:absolute;right:12px;top:12px;width:35px;height:35px;border:0;background:#fffdf0;font-size:22px;z-index:2}.toast{font-size:10px;color:var(--muted);margin-top:20px}
+@media(max-width:900px){.hero-grid{gap:22px}.hero-art{min-height:440px}.gallery{grid-template-columns:repeat(2,1fr)}.memory-image{height:280px}.timeline-grid{gap:35px}.about-grid{gap:30px}}
+@media(max-width:620px){.wrap{width:calc(100% - 32px)}.topline{font-size:8px;letter-spacing:.12em}.nav{height:64px}.menu{display:block}.navlinks{display:none;position:absolute;z-index:10;top:98px;left:0;right:0;padding:20px 24px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:14px}.navlinks.open{display:flex}.hero{padding:35px 0 48px}.hero-grid{grid-template-columns:1fr}.hero h1{font-size:64px}.hero-art{min-height:390px;margin:15px 8px 0}.hero-photo{inset:0 7% 0 7%}.stamp{width:85px;height:85px;font-size:8px}.side-caption{left:-3px}.hero-note{max-width:none}.section-head{display:block}.section-sub{margin-top:15px}.collection,.timeline{padding:60px 0}.filters{gap:6px}.filter{padding:8px 10px}.searchbox{margin:8px 0 0;width:100%}.gallery{gap:10px}.memory-image{height:210px}.memory-info{padding:13px}.memory-title{font-size:17px}.memory-desc{font-size:10px}.memory-date{font-size:8px}.quote-inner{grid-template-columns:1fr}.quote-side{writing-mode:initial}.quote-band{padding:48px 0}.timeline-grid{grid-template-columns:1fr;gap:25px}.timeline-item{grid-template-columns:72px 1fr;gap:14px}.timeline-date{font-size:17px}.timeline-item h3{font-size:19px}.about{padding:55px 0}.about-grid{grid-template-columns:1fr}.about-card{padding:23px}.footer-row{align-items:flex-start;flex-direction:column}.lightbox{padding:12px}.lightbox-content{grid-template-columns:1fr;max-height:92vh;overflow:auto}.lightbox img{height:48vh}.lightbox-copy{padding:22px}.lightbox-copy h3{font-size:28px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+</style>
 </head>
 <body>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
-  <header class="site-header">
-    <a class="brand" href="./" aria-label="Kelou Archive home">
-      <span class="brand-mark">可</span>
-      <span class="brand-copy"><strong>KELOU <em>ARCHIVE</em></strong><small>可楼 · A fan-made archive</small></span>
-    </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <nav class="main-nav" id="mainNav">
-      <a class="nav-link active" href="#home">HOME <span>首页</span></a>
-      <a class="nav-link" href="#gallery">PHOTOS <span>图集</span></a>
-      <a class="nav-link" href="#about">ABOUT <span>关于</span></a>
-    </nav>
-    <a class="header-pill" href="#gallery"><span class="pulse"></span> EXPLORE ARCHIVE</a>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE CORNER FOR CLOU</p>
-        <h1>Every moment,<br><span>kept close.</span></h1>
-        <p class="hero-cn">把每一个闪光的瞬间，珍藏起来。</p>
-        <p class="hero-description">A fan-made archive celebrating 可楼 (Clou) — performances, daily moments, livestream memories and fan creations, collected with love.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#gallery">Explore photos <span>↗</span></a>
-          <a class="button button-quiet" href="#about">About this archive</a>
-        </div>
-        <div class="hero-meta"><span class="meta-dot"></span> MADE BY FANS, WITH LOVE <span class="meta-divider">/</span> 为热爱留档</div>
-      </div>
-      <div class="hero-art" aria-label="Decorative abstract artwork">
-        <div class="orbit orbit-large"></div><div class="orbit orbit-small"></div>
-        <div class="hero-glow"></div>
-        <div class="hero-card hero-card-back"><span>可楼</span><small>MEMORIES / 记忆</small></div>
-        <div class="hero-card hero-card-front">
-          <div class="card-spark">✦</div>
-          <div class="hero-monogram">可<span>楼</span></div>
-          <div class="hero-card-bottom"><span>KELOU ARCHIVE</span><span>✧ 01</span></div>
-        </div>
-        <span class="float-label label-top">LIGHTS ON STAGE · 舞台</span>
-        <span class="float-label label-bottom">MOMENTS TO KEEP · 珍藏</span>
-      </div>
-      <div class="hero-scroll"><span></span> SCROLL TO DISCOVER</div>
-    </section>
-
-    <section class="gallery-section section-wrap" id="gallery">
-      <div class="section-heading">
-        <div><p class="eyebrow">THE COLLECTION / 收藏</p><h2>Photo <span>gallery.</span></h2><p class="section-subtitle">Little moments, endless memories. <span>点滴瞬间，皆为珍藏。</span></p></div>
-        <div class="collection-count"><strong id="photoCount">08</strong><span>MEMORIES<br>已收录</span></div>
-      </div>
-
-      <div class="gallery-tools">
-        <div class="filter-list" role="group" aria-label="Filter gallery">
-          <button class="filter-button active" data-filter="all">All <span>全部</span></button>
-          <button class="filter-button" data-filter="stage">Stage <span>舞台</span></button>
-          <button class="filter-button" data-filter="live">Livestream <span>直播</span></button>
-          <button class="filter-button" data-filter="daily">Daily <span>日常</span></button>
-          <button class="filter-button" data-filter="fanart">Fan art <span>应援</span></button>
-        </div>
-        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search memories..." aria-label="Search memories"></label>
-      </div>
-
-      <div class="gallery-grid" id="galleryGrid">
-        <article class="photo-card tall" data-category="stage" data-title="Stage lights" data-description="A stage memory · 舞台瞬间" data-image="./images/memory-01.svg">
-          <button class="photo-open" aria-label="Open Stage lights photo"><img src="./images/memory-01.svg" alt="Decorative placeholder for a Clou stage photo"><span class="photo-overlay"><span class="photo-category">STAGE · 舞台</span><strong>Stage lights</strong><small>舞台瞬间 <b>↗</b></small></span></button>
-        </article>
-        <article class="photo-card" data-category="live" data-title="Late night live" data-description="A little late-night hello · 深夜直播" data-image="./images/memory-02.svg">
-          <button class="photo-open" aria-label="Open Late night live photo"><img src="./images/memory-02.svg" alt="Decorative placeholder for a Clou livestream photo"><span class="photo-overlay"><span class="photo-category">LIVESTREAM · 直播</span><strong>Late night live</strong><small>深夜直播 <b>↗</b></small></span></button>
-        </article>
-        <article class="photo-card" data-category="daily" data-title="Quiet moments" data-description="Soft and ordinary moments · 日常点滴" data-image="./images/memory-03.svg">
-          <button class="photo-open" aria-label="Open Quiet moments photo"><img src="./images/memory-03.svg" alt="Decorative placeholder for a Clou daily-life photo"><span class="photo-overlay"><span class="photo-category">DAILY · 日常</span><strong>Quiet moments</strong><small>日常点滴 <b>↗</b></small></span></button>
-        </article>
-        <article class="photo-card wide" data-category="fanart" data-title="Made with love" data-description="Fan-made creations · 用心制作" data-image="./images/memory-04.svg">
-          <button class="photo-open" aria-label="Open Made with love photo"><img src="./images/memory-04.svg" alt="Decorative placeholder for fan art"><span class="photo-overlay"><span class="photo-category">FAN ART · 应援</span><strong>Made with love</strong><small>用心制作 <b>↗</b></small></span></button>
-        </article>
-        <article class="photo-card" data-category="stage" data-title="Under the spotlight" data-description="A moment beneath the lights · 聚光灯下" data-image="./images/memory-05.svg">
-          <button class="photo-open" aria-label="Open Under the spotlight photo"><img src="./images/memory-05.svg" alt="Decorative placeholder for a Clou performance photo"><span class="photo-overlay"><span class="photo-category">STAGE · 舞台</span><strong>Under the spotlight</strong><small>聚光灯下 <b>↗</b></small></span></button>
-        </article>
-        <article class="photo-card" data-category="live" data-title="A familiar voice" data-description="A voice that feels like home · 熟悉的声音" data-image="./images/memory-06.svg">
-          <button class="photo-open" aria-label="Open A familiar voice photo"><img src="./images/memory-06.svg" alt="Decorative placeholder for a Clou livestream memory"><span class="photo-overlay"><span class="photo-category">LIVESTREAM · 直播</span><strong>A familiar voice</strong><small>熟悉的声音 <b>↗</b></small></span></button>
-        </article>
-        <article class="photo-card" data-category="daily" data-title="Little things" data-description="Small things worth remembering · 值得记住的小事" data-image="./images/memory-07.svg">
-          <button class="photo-open" aria-label="Open Little things photo"><img src="./images/memory-07.svg" alt="Decorative placeholder for a Clou daily-life memory"><span class="photo-overlay"><span class="photo-category">DAILY · 日常</span><strong>Little things</strong><small>值得记住的小事 <b>↗</b></small></span></button>
-        </article>
-        <article class="photo-card" data-category="fanart" data-title="For Clou" data-description="A little message of support · 为可楼加油" data-image="./images/memory-08.svg">
-          <button class="photo-open" aria-label="Open For Clou photo"><img src="./images/memory-08.svg" alt="Decorative placeholder for a fan support design"><span class="photo-overlay"><span class="photo-category">FAN ART · 应援</span><strong>For Clou</strong><small>为可楼加油 <b>↗</b></small></span></button>
-        </article>
-      </div>
-      <p class="empty-state" id="emptyState" hidden>No memories found. Try another keyword. <span>没有找到相关内容，请试试其他关键词。</span></p>
-      <p class="gallery-note"><span>✦</span> These are design placeholders. Replace them with your own Clou photos. <span>此处为示例图，请替换为你收藏的可楼照片。</span></p>
-    </section>
-
-    <section class="about-section section-wrap" id="about">
-      <div class="about-symbol">可楼</div>
-      <div class="about-copy"><p class="eyebrow">A FAN-MADE PROJECT / 粉丝自制</p><h2>For the moments<br>we want to <span>remember.</span></h2><p>This independent fan archive is made to collect and celebrate moments of 可楼 (Clou). It is not an official website and is not affiliated with Clou or any agency.</p><p class="about-cn">这是一个由粉丝建立的非官方收藏站，用来记录与分享可楼的美好瞬间。</p></div>
-    </section>
-  </main>
-
-  <footer class="site-footer"><a class="footer-brand" href="./">KELOU ARCHIVE <span>可楼</span></a><p>Made with care by fans, for the memories. <span>因热爱而记录。</span></p><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
-
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
-    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo viewer">×</button>
-    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous photo">‹</button>
-    <figure><img id="lightboxImage" src="" alt=""><figcaption><span id="lightboxCategory"></span><strong id="lightboxTitle"></strong><small id="lightboxDescription"></small></figcaption></figure>
-    <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next photo">›</button>
-  </div>
-</body>
-</html>
+<div class="topline">A fan-made archive · made with love for Clou · 非官方粉丝收藏站</div>
+<header class="wrap nav">
+  <a class="brand" href="#home"><span class="brand-mark">可</span><span>CLOU ARCHIVE<br><small style="font-weight:400;color:var(--muted);font-size:9px">可楼 · MEMORY COLLECTION</small></span></a>
+  <button class="menu" id="menuBtn" aria-label="Mở menu">☰</button>
+  <nav class="navlinks" id="navLinks"><a href="#home">Home 首页</a><a href="#gallery">Gallery 图集</a><a href="#timeline">Moments 记录</a><a href="#about">About 关于</a></nav>
+</header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid"><div>
+  <div class="eyebrow">A little corner for Clou</div>
+  <h1>Every moment,<br><em>kept close.</em></h1>
+  <div class="cnline">把每一个闪光的瞬间，珍藏起来。</div>
+  <p class="intro">Một góc nhỏ dành cho Clou — nơi những khoảnh khắc trên sân khấu, những buổi livestream, những điều bình dị và tình cảm của người hâm mộ được lưu giữ bằng tất cả sự yêu mến.</p>
+  <div class="hero-actions"><a class="btn primary" href="#gallery">Explore the archive <span>↗</span></a><a class="btn" href="#about">Our little story <span>＋</span></a></div>
+  <div class="hero-note"><span>Independent fan project</span><span>为热爱留档 ✦</span></div>
+</div><div class="hero-art"><div class="hero-photo"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85" alt="Ảnh phong cảnh tông màu điện ảnh — thay bằng ảnh Clou của bạn"><div class="photo-label">A moment to remember.</div></div><div class="stamp">COLLECTED<br>WITH LOVE<br>✦ 可楼 ✦</div><div class="side-caption">MEMORIES · MOMENTS · ALWAYS</div><div class="hero-index">No. 001</div></div></div></section>
+<div class="ticker"><div class="ticker-track"><span>FOR THE MOMENTS WE KEEP <b>✳</b> 舞台瞬间 <b>✳</b> LIVESTREAM MEMORIES <b>✳</b> 因热爱而记录 <b>✳</b> LITTLE THINGS, BIG FEELINGS <b>✳</b></span><span>FOR THE MOMENTS WE KEEP <b>✳</b> 舞台瞬间 <b>✳</b> LIVESTREAM MEMORIES <b>✳</b> 因热爱而记录 <b>✳</b> LITTLE THINGS, BIG FEELINGS <b>✳</b></span></div></div>
+<section class="collection" id="gallery"><div class="wrap"><div class="section-head"><div><div class="section-kicker">01 / The collection · 收藏</div><h2>Little moments,<br><em>endless memories.</em></h2></div><p class="section-sub">Từng bức ảnh, từng lần xuất hiện — những điều nhỏ bé mà chúng ta muốn giữ lại.</p></div>
+<div class="filters" id="filters"><button class="filter active" data-filter="all">All 全部</button><button class="filter" data-filter="stage">Stage 舞台</button><button class="filter" data-filter="live">Livestream 直播</button><button class="filter" data-filter="daily">Daily 日常</button><button class="filter" data-filter="fanart">Fan art 应援</button><label class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="Search memories..." aria-label="Tìm kiếm kỷ niệm"></label></div>
+<div class="gallery" id="galleryGrid">
+<article class="memory" data-category="stage" data-search="stage sân khấu ánh đèn spotlight performance"><div class="memory-image"><img loading="lazy" src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=800&q=80" alt="Ánh đèn sân khấu mẫu"></div><div class="memory-info"><div class="memory-type">Stage · 舞台</div><h3 class="memory-title">Under the spotlight</h3><p class="memory-desc">Những giây phút tỏa sáng dưới ánh đèn.</p><div class="memory-date"><span>PERFORMANCE</span><span>01 / 08</span></div></div></article>
+<article class="memory" data-category="live" data-search="livestream trực tiếp buổi live giọng nói đêm"><div class="memory-image"><img loading="lazy" src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80" alt="Micro và buổi biểu diễn mẫu"></div><div class="memory-info"><div class="memory-type">Livestream · 直播</div><h3 class="memory-title">A familiar voice</h3><p class="memory-desc">Một giọng nói quen thuộc, một buổi tối dịu dàng.</p><div class="memory-date"><span>LIVE MEMORY</span><span>02 / 08</span></div></div></article>
+<article class="memory" data-category="daily" data-search="daily đời thường khoảnh khắc bình yên quiet moments"><div class="memory-image"><img loading="lazy" src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80" alt="Khoảnh khắc bình yên mẫu"></div><div class="memory-info"><div class="memory-type">Daily · 日常</div><h3 class="memory-title">Quiet moments</h3><p class="memory-desc">Những điều bình thường cũng trở nên đáng nhớ.</p><div class="memory-date"><span>LITTLE THINGS</span><span>03 / 08</span></div></div></article>
+<article class="memory" data-category="fanart" data-search="fan art ứng viện thiết kế made with love"><div class="memory-image"><img loading="lazy" src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80" alt="Dụng cụ sáng tạo fan art mẫu"></div><div class="memory-info"><div class="memory-type">Fan art · 应援</div><h3 class="memory-title">Made with love</h3><p class="memory-desc">Tình cảm được gửi gắm qua những sáng tạo nhỏ.</p><div class="memory-date"><span>FAN CREATION</span><span>04 / 08</span></div></div></article>
+<article class="memory" data-category="stage" data-search="stage sân khấu biểu diễn ánh sáng live show"><div class="memory-image"><img loading="lazy" src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=80" alt="Sân khấu biểu diễn mẫu"></div><div class="memory-info"><div class="memory-type">Stage · 舞台</div><h3 class="memory-title">When the lights glow</h3><p class="memory-desc">Khoảnh khắc sân khấu khiến trái tim rung động.</p><div class="memory-date"><span>ON STAGE</span><span>05 / 08</span></div></div></article>
+<article class="memory" data-category="live" data-search="livestream late night live 深夜直播 trò chuyện"><div class="memory-image"><img loading="lazy" src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80" alt="Không khí sự kiện mẫu"></div><div class="memory-info"><div class="memory-type">Livestream · 直播</div><h3 class="memory-title">Late night, little joys</h3><p class="memory-desc">Một buổi live muộn và thật nhiều niềm vui.</p><div class="memory-date"><span>LIVE MOMENT</span><span>06 / 08</span></div></div></article>
+<article class="memory" data-category="daily" data-search="daily little things 日常 đời thường nắng sớm"><div class="memory-image"><img loading="lazy" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" alt="Khung cảnh yên bình mẫu"></div><div class="memory-info"><div class="memory-type">Daily · 日常</div><h3 class="memory-title">A softer kind of day</h3><p class="memory-desc">Một ngày bình yên, một ký ức ấm áp.</p><div class="memory-date"><span>DAILY LIFE</span><span>07 / 08</span></div></div></article>
+<article class="memory" data-category="fanart" data-search="fanart for clou 可楼 应援 tác phẩm người hâm mộ"><div class="memory-image"><img loading="lazy" src="https://images.unsplash.com/photo-1455390582262-044c8329f87e?auto=format&fit=crop&w=800&q=80" alt="Sổ tay sáng tạo mẫu"></div><div class="memory-info"><div class="memory-type">Fan art · 应援</div><h3 class="memory-title">A little note for Clou</h3><p class="memory-desc">Dành tặng Clou, bằng tất cả sự chân thành.</p><div class="memory-date"><span>FROM FANS</span><span>08 / 08</span></div></div></article>
+</div><div class="empty" id="emptyState">Không tìm thấy kỷ niệm phù hợp. Thử từ khóa khác nhé ✦</div><p class="toast">✦ Ảnh hiện tại chỉ là ảnh minh họa giao diện. Hãy thay bằng ảnh Clou mà bạn có quyền chia sẻ.</p>
+</div></section>
+<section class="quote-band"><div class="wrap quote-inner"><div><div class="quote-mark">“</div><p class="quote-text">Some moments pass. The feelings stay.</p><div class="quote-cn">有些瞬间会过去，有些心动会留下。</div></div><div class="quote-side">A FAN-MADE ARCHIVE · NOT OFFICIAL</div></div></section>
+<section class="timeline" id="timeline"><div class="wrap timeline-grid"><div class="timeline-intro"><div class="section-kicker">02 / Memory notes · 记录</div><h2>Moments<br>worth keeping.</h2><p>Một cuốn nhật ký nhỏ dành cho những dấu mốc, lần xuất hiện và kỷ niệm của cộng đồng người hâm mộ. Bạn có thể sửa các mục bên cạnh thành ngày tháng và sự kiện thực tế.</p><a class="btn" href="#gallery">Back to collection ↗</a></div><div class="timeline-list"><article class="timeline-item"><div class="timeline-date">NOTE 01</div><div><h3>The first page</h3><p>Bắt đầu lưu lại những khoảnh khắc yêu thích — một nơi để ký ức không bị trôi đi.</p></div></article><article class="timeline-item"><div class="timeline-date">NOTE 02</div><div><h3>On stage, in our hearts</h3><p>Những lần xuất hiện trên sân khấu và ánh sáng mà người hâm mộ muốn ghi nhớ.</p></div></article><article class="timeline-item"><div class="timeline-date">NOTE 03</div><div><h3>Little live moments</h3><p>Những buổi livestream, câu nói dễ thương và khoảnh khắc gần gũi.</p></div></article><article class="timeline-item"><div class="timeline-date">NOTE 04</div><div><h3>Made by fans, kept together</h3><p>Một góc dành cho fan art, lời nhắn và những sáng tạo từ cộng đồng.</p></div></article></div></div></section>
+<section class="about" id="about"><div class="wrap about-grid"><div><div class="section-kicker">03 / About this archive · 关于</div><h2>For the moments<br><em>we want to remember.</em></h2><p>Clou Archive là dự án lưu trữ phi lợi nhuận do người hâm mộ thực hiện, với mong muốn sưu tầm và sắp xếp những khoảnh khắc đáng nhớ liên quan đến Clou — từ sân khấu, livestream đến những điều bình dị và tác phẩm của fan.</p><p>Đây là website do fan tự xây dựng, không phải trang web chính thức và không đại diện cho Clou hay bất kỳ công ty quản lý nào.</p></div><div class="about-card"><div class="big-cn">因热爱而记录。</div><p>We collect these moments not because they must last forever, but because they mattered to us.</p><p>我们珍藏这些瞬间，只因为它们曾带给我们感动。</p><div class="about-sign">With love, from fans ✦</div></div></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-row"><div><div class="footer-brand">可楼 · Clou Archive</div><p>Made with care by fans, for the memories.</p></div><div class="footer-links"><a href="#home">Back to top ↑</a><a href="#gallery">Explore archive</a></div></div></footer>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Chi tiết kỷ niệm"><div class="lightbox-content"><button class="close-lightbox" id="closeLightbox" aria-label="Đóng">×</button><img id="lightboxImg" src="" alt=""><div class="lightbox-copy"><div class="section-kicker" id="lightboxType"></div><h3 id="lightboxTitle"></h3><p id="lightboxDesc"></p><div class="toast">Clou Archive · collected with love</div></div></div></div>
+<script>
+const filterButtons=[...document.querySelectorAll('.filter')], cards=[...document.querySelectorAll('.memory')], searchInput=document.getElementById('searchInput');let activeFilter='all';
+function filterCards(){const term=searchInput.value.trim().toLowerCase();let count=0;cards.forEach(card=>{const categoryMatch=activeFilter==='all'||card.dataset.category===activeFilter;const text=(card.dataset.search+' '+card.innerText).toLowerCase();const searchMatch=!term||text.includes(term);const show=categoryMatch&&searchMatch;card.classList.toggle('hidden',!show);if(show)count++});document.getElementById('emptyState').classList.toggle('show',count===0)}
+filterButtons.forEach(btn=>btn.addEventListener('click',()=>{filterButtons.forEach(b=>b.classList.remove('active'));btn.classList.add('active');activeFilter=btn.dataset.filter;filterCards()}));searchInput.addEventListener('input',filterCards);
+const lightbox=document.getElementById('lightbox');cards.forEach(card=>card.addEventListener('click',()=>{const img=card.querySelector('img');document.getElementById('lightboxImg').src=img.src;document.getElementById('lightboxImg').alt=img.alt;document.getElementById('lightboxType').textContent=card.querySelector('.memory-type').textContent;document.getElementById('lightboxTitle').textContent=card.querySelector('.memory-title').textContent;document.getElementById('lightboxDesc').textContent=card.querySelector('.memory-desc').textContent;lightbox.classList.add('open');document.body.style.overflow='hidden'}));function closeBox(){lightbox.classList.remove('open');document.body.style.overflow=''}document.getElementById('closeLightbox').addEventListener('click',closeBox);lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeBox()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeBox()});
+const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+</script>
+</body></html>
