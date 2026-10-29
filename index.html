@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0d18">
+  <meta name="description" content="KELOU ARCHIVE — a fan-made photo archive for 可楼 (Clou).">
+  <title>KELOU ARCHIVE · 可楼</title>
+  <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Kelou Archive home">
+      <span class="brand-mark">可</span>
+      <span class="brand-copy"><strong>KELOU <em>ARCHIVE</em></strong><small>可楼 · A fan-made archive</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a class="nav-link active" href="#home">HOME <span>首页</span></a>
+      <a class="nav-link" href="#gallery">PHOTOS <span>图集</span></a>
+      <a class="nav-link" href="#about">ABOUT <span>关于</span></a>
+    </nav>
+    <a class="header-pill" href="#gallery"><span class="pulse"></span> EXPLORE ARCHIVE</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE CORNER FOR CLOU</p>
+        <h1>Every moment,<br><span>kept close.</span></h1>
+        <p class="hero-cn">把每一个闪光的瞬间，珍藏起来。</p>
+        <p class="hero-description">A fan-made archive celebrating 可楼 (Clou) — performances, daily moments, livestream memories and fan creations, collected with love.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#gallery">Explore photos <span>↗</span></a>
+          <a class="button button-quiet" href="#about">About this archive</a>
+        </div>
+        <div class="hero-meta"><span class="meta-dot"></span> MADE BY FANS, WITH LOVE <span class="meta-divider">/</span> 为热爱留档</div>
+      </div>
+      <div class="hero-art" aria-label="Decorative abstract artwork">
+        <div class="orbit orbit-large"></div><div class="orbit orbit-small"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-card hero-card-back"><span>可楼</span><small>MEMORIES / 记忆</small></div>
+        <div class="hero-card hero-card-front">
+          <div class="card-spark">✦</div>
+          <div class="hero-monogram">可<span>楼</span></div>
+          <div class="hero-card-bottom"><span>KELOU ARCHIVE</span><span>✧ 01</span></div>
+        </div>
+        <span class="float-label label-top">LIGHTS ON STAGE · 舞台</span>
+        <span class="float-label label-bottom">MOMENTS TO KEEP · 珍藏</span>
+      </div>
+      <div class="hero-scroll"><span></span> SCROLL TO DISCOVER</div>
+    </section>
+
+    <section class="gallery-section section-wrap" id="gallery">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE COLLECTION / 收藏</p><h2>Photo <span>gallery.</span></h2><p class="section-subtitle">Little moments, endless memories. <span>点滴瞬间，皆为珍藏。</span></p></div>
+        <div class="collection-count"><strong id="photoCount">08</strong><span>MEMORIES<br>已收录</span></div>
+      </div>
+
+      <div class="gallery-tools">
+        <div class="filter-list" role="group" aria-label="Filter gallery">
+          <button class="filter-button active" data-filter="all">All <span>全部</span></button>
+          <button class="filter-button" data-filter="stage">Stage <span>舞台</span></button>
+          <button class="filter-button" data-filter="live">Livestream <span>直播</span></button>
+          <button class="filter-button" data-filter="daily">Daily <span>日常</span></button>
+          <button class="filter-button" data-filter="fanart">Fan art <span>应援</span></button>
+        </div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search memories..." aria-label="Search memories"></label>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <article class="photo-card tall" data-category="stage" data-title="Stage lights" data-description="A stage memory · 舞台瞬间" data-image="./images/memory-01.svg">
+          <button class="photo-open" aria-label="Open Stage lights photo"><img src="./images/memory-01.svg" alt="Decorative placeholder for a Clou stage photo"><span class="photo-overlay"><span class="photo-category">STAGE · 舞台</span><strong>Stage lights</strong><small>舞台瞬间 <b>↗</b></small></span></button>
+        </article>
+        <article class="photo-card" data-category="live" data-title="Late night live" data-description="A little late-night hello · 深夜直播" data-image="./images/memory-02.svg">
+          <button class="photo-open" aria-label="Open Late night live photo"><img src="./images/memory-02.svg" alt="Decorative placeholder for a Clou livestream photo"><span class="photo-overlay"><span class="photo-category">LIVESTREAM · 直播</span><strong>Late night live</strong><small>深夜直播 <b>↗</b></small></span></button>
+        </article>
+        <article class="photo-card" data-category="daily" data-title="Quiet moments" data-description="Soft and ordinary moments · 日常点滴" data-image="./images/memory-03.svg">
+          <button class="photo-open" aria-label="Open Quiet moments photo"><img src="./images/memory-03.svg" alt="Decorative placeholder for a Clou daily-life photo"><span class="photo-overlay"><span class="photo-category">DAILY · 日常</span><strong>Quiet moments</strong><small>日常点滴 <b>↗</b></small></span></button>
+        </article>
+        <article class="photo-card wide" data-category="fanart" data-title="Made with love" data-description="Fan-made creations · 用心制作" data-image="./images/memory-04.svg">
+          <button class="photo-open" aria-label="Open Made with love photo"><img src="./images/memory-04.svg" alt="Decorative placeholder for fan art"><span class="photo-overlay"><span class="photo-category">FAN ART · 应援</span><strong>Made with love</strong><small>用心制作 <b>↗</b></small></span></button>
+        </article>
+        <article class="photo-card" data-category="stage" data-title="Under the spotlight" data-description="A moment beneath the lights · 聚光灯下" data-image="./images/memory-05.svg">
+          <button class="photo-open" aria-label="Open Under the spotlight photo"><img src="./images/memory-05.svg" alt="Decorative placeholder for a Clou performance photo"><span class="photo-overlay"><span class="photo-category">STAGE · 舞台</span><strong>Under the spotlight</strong><small>聚光灯下 <b>↗</b></small></span></button>
+        </article>
+        <article class="photo-card" data-category="live" data-title="A familiar voice" data-description="A voice that feels like home · 熟悉的声音" data-image="./images/memory-06.svg">
+          <button class="photo-open" aria-label="Open A familiar voice photo"><img src="./images/memory-06.svg" alt="Decorative placeholder for a Clou livestream memory"><span class="photo-overlay"><span class="photo-category">LIVESTREAM · 直播</span><strong>A familiar voice</strong><small>熟悉的声音 <b>↗</b></small></span></button>
+        </article>
+        <article class="photo-card" data-category="daily" data-title="Little things" data-description="Small things worth remembering · 值得记住的小事" data-image="./images/memory-07.svg">
+          <button class="photo-open" aria-label="Open Little things photo"><img src="./images/memory-07.svg" alt="Decorative placeholder for a Clou daily-life memory"><span class="photo-overlay"><span class="photo-category">DAILY · 日常</span><strong>Little things</strong><small>值得记住的小事 <b>↗</b></small></span></button>
+        </article>
+        <article class="photo-card" data-category="fanart" data-title="For Clou" data-description="A little message of support · 为可楼加油" data-image="./images/memory-08.svg">
+          <button class="photo-open" aria-label="Open For Clou photo"><img src="./images/memory-08.svg" alt="Decorative placeholder for a fan support design"><span class="photo-overlay"><span class="photo-category">FAN ART · 应援</span><strong>For Clou</strong><small>为可楼加油 <b>↗</b></small></span></button>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No memories found. Try another keyword. <span>没有找到相关内容，请试试其他关键词。</span></p>
+      <p class="gallery-note"><span>✦</span> These are design placeholders. Replace them with your own Clou photos. <span>此处为示例图，请替换为你收藏的可楼照片。</span></p>
+    </section>
+
+    <section class="about-section section-wrap" id="about">
+      <div class="about-symbol">可楼</div>
+      <div class="about-copy"><p class="eyebrow">A FAN-MADE PROJECT / 粉丝自制</p><h2>For the moments<br>we want to <span>remember.</span></h2><p>This independent fan archive is made to collect and celebrate moments of 可楼 (Clou). It is not an official website and is not affiliated with Clou or any agency.</p><p class="about-cn">这是一个由粉丝建立的非官方收藏站，用来记录与分享可楼的美好瞬间。</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="footer-brand" href="./">KELOU ARCHIVE <span>可楼</span></a><p>Made with care by fans, for the memories. <span>因热爱而记录。</span></p><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo viewer">×</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous photo">‹</button>
+    <figure><img id="lightboxImage" src="" alt=""><figcaption><span id="lightboxCategory"></span><strong id="lightboxTitle"></strong><small id="lightboxDescription"></small></figcaption></figure>
+    <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next photo">›</button>
+  </div>
+</body>
+</html>
